@@ -1,11 +1,18 @@
 <template>
   <div class="hello">
-    <h1>Hello World</h1>
+    <h1>{{ message }}</h1>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    message: {
+      type: String,
+      default: 'Welcome'
+    }
+  }
+};
 </script>
 
 <style scoped lang="scss">
